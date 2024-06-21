@@ -10,11 +10,11 @@ import Car3 from "../components/img/Car3.jpg"
 import Car4 from "../components/img/Car4.jpg"
 import { Badge } from '@mui/material';
 
+
 const Container = styled.div`
     height: 60px;
     background-color: #ffffff; 
 `
-
 
 const Wrapper = styled.div`
     padding: 10px 20px;
@@ -99,6 +99,8 @@ const Text3 = styled.div`
         margin-left: 100px;
 `
 
+
+
 const Navbar = () => {
     return (
         <Main>
@@ -114,15 +116,16 @@ const Navbar = () => {
                         <Logo>AVTONOMIA</Logo>
                     </Conter>
                     <Right>
-                        <form action="Registration.js">
-                        <button>Регистрация</button>
-                        </form> 
-                        <form action="">
-                        <button>Войти</button>
-                        </form>    
-                        <form action="">
-                        <button>Контакты</button>
-                        </form>     
+                        <form action="registration">
+                        <button>Регистраци</button>
+                        </form>
+
+                        <form action="korzina">
+                        <button>Корзина</button>
+                        </form>
+                        <form action="Onas">
+                        <button>Все о нас</button>
+                        </form>
                         <MenuItem>
                             <Badge badgeContent={4} color='primary'>
                                 <ShoppingCart />
@@ -134,31 +137,54 @@ const Navbar = () => {
 
             <Iimages>
         <img src={Car} alt="Car"/>
+        
         <Text3>
         <h1>Машина Mercedes-Benz S-Класс</h1>
-        <h2>Машина S-Класса, довольно крупная для мерседеса как и по длине, 330км/ч</h2>
-        <h3>Цена: ~18.000.000 рублей</h3>
+        <h2>Машина S-Класса, довольно крупная для мерседеса как и по длине, 260км/ч</h2>
+        <h3>Цена: ~18.000.000 рублей  <form action="Tovar2">
+                <button>Товар</button>
+</form>
+<label for="input">Число:</label> 
+<button id="buy">Купить</button>
+<button id="plus">+</button>
+<button id="minus">-</button></h3>
         </Text3>
         <img src={Car3} alt="Car3"/>
         <Text2>
         <h1>Машина BMW</h1>
         <h2>Машина BMW очень быстрая и разгон 340 км/ч</h2>
-        <h3>Цена: ~5.500.000 рублей </h3>
+        <h3>Цена: ~5.500.000 рублей
+            <form action="Tovar">
+                <button>Товар</button>
+</form>
+<label for="input">Число:</label> 
+<button id="buy">Купить</button>
+<button id="plus">+</button>
+<button id="minus">-</button></h3>                         
         </Text2>
+    
        </Iimages>  
        <Iimages1>
         <img src={Car4} alt="Car4"/>
         <Text>
-        <h1>Машина Lamborghini Hurakan</h1>
+        <h1>Машина Lamborghini Hurыakan</h1>
         <h2>Машина Lamborghini Hurakan очень быстрая и разгон 320 км/ч</h2>
-        <h3>Цена: ~20.000.000 рублей </h3>
+        <h3>Цена: ~20.000.000 рублей <form action="Tovar3">
+                <button>Товар</button>
+</form>
+<label for="input">Число:</label> 
+<button id="buy">Купить</button>
+<button id="plus">+</button>
+<button id="minus">-</button></h3>
         </Text>
         </Iimages1>
         </Main>
+        
 
    
     )
 }
+
 
 
 export default Navbar
